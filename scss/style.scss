@@ -6,6 +6,10 @@
     font-family: Helvetica;
     src: url(../fonts/HelveticaRegular.eot);
 }
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/bebasneueregular.woff);
+}
 
 
 .container {
@@ -90,7 +94,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 217px;
-                height: 279px;
+                height: 280px;
                 border: 1px solid rgba(0, 0, 0, 0.16);
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
                 background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(253, 254, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 100%);
@@ -98,17 +102,21 @@
                     display: flex;
                     flex-flow: column;                    
                     width: 203px;
-                    height: 197px;
+                    height: 195px;
                     position: relative;                    
-                    background-image: url(../img/Main/1.png);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                    // background-image: url(../img/Main/1.png);
+                    // background-repeat: no-repeat;
+                    // background-position: center;
+                    // background-size: cover;
                     .blocks__imageText {
                         position: absolute;
                         bottom: -10px;
-                        left: 0;
+                        left: 5px;
                         color: #fff;
+                        font-family: "BebasNeue";
+                        font-size: 19px;
+                        color: #ffffff;
+                        font-weight: 400;
                     }
                 }
                 .blocks__underImage {
@@ -125,9 +133,8 @@
                         width: 100%;
                         font-family: "Helvetica";
                         font-size: 15px;
-                        color: #565555;
+                        color: #979393;
                         font-weight: 400;
-
                     }
                     .blocks__share {
                         display: flex;
@@ -138,7 +145,7 @@
                         .blocks__shareText {
                             font-family: "Helvetica";
                             font-size: 14px;
-                            color: #565555;
+                            color: #979393;
                             font-weight: 400;
                             margin-right: 5px;
                         }

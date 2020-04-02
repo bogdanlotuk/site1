@@ -4,6 +4,9 @@
 @font-face {
   font-family: Helvetica;
   src: url(../fonts/HelveticaRegular.eot); }
+@font-face {
+  font-family: BebasNeue;
+  src: url(../fonts/bebasneueregular.woff); }
 .container {
   max-width: 1280px;
   margin: 0 auto; }
@@ -72,7 +75,7 @@
         align-items: center;
         justify-content: center;
         width: 217px;
-        height: 279px;
+        height: 280px;
         border: 1px solid rgba(0, 0, 0, 0.16);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(253, 254, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 100%); }
@@ -80,17 +83,17 @@
           display: flex;
           flex-flow: column;
           width: 203px;
-          height: 197px;
-          position: relative;
-          background-image: url(../img/Main/1.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover; }
+          height: 195px;
+          position: relative; }
           .container .blocks .blocks__rows .blocks__item .blocks__image .blocks__imageText {
             position: absolute;
             bottom: -10px;
-            left: 0;
-            color: #fff; }
+            left: 5px;
+            color: #fff;
+            font-family: "BebasNeue";
+            font-size: 19px;
+            color: #ffffff;
+            font-weight: 400; }
         .container .blocks .blocks__rows .blocks__item .blocks__underImage {
           display: flex;
           flex-flow: column;
@@ -105,7 +108,7 @@
             width: 100%;
             font-family: "Helvetica";
             font-size: 15px;
-            color: #565555;
+            color: #979393;
             font-weight: 400; }
           .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share {
             display: flex;
@@ -116,7 +119,7 @@
             .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share .blocks__shareText {
               font-family: "Helvetica";
               font-size: 14px;
-              color: #565555;
+              color: #979393;
               font-weight: 400;
               margin-right: 5px; }
             .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share img {
