@@ -2,6 +2,11 @@
     font-family: Lobster;
     src: url(../fonts/Lobster\ 1.4.otf);
 }
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/HelveticaRegular.eot);
+}
+
 
 .container {
     max-width: 1280px;
@@ -14,11 +19,11 @@
         justify-content: center;
         background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%);
         .header__logo {
-            width: 33.333%;
+            width: 40%;
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;            
             .header__logoText {
                 display: flex;
                 font-family: "Lobster";
@@ -31,11 +36,119 @@
             }            
         } 
         .header__navigation {
-            width: 66.666%;
+            width: 60%;
             height: 100%;
             .header__navList {
-                display: flex;     
+                height: 100%;
+                display: flex;  
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    font-family: "Helvetica CE";
+                    font-size: 15px;
+                    color: #545454;
+                    li {
+                        width: 108px;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-right: 1px solid #DEDEDE;
+                        &:hover {
+                            background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%);
+                        }  
+
+                    }
+                }
             }
         }
     }
+    .selectImage{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        .selectImage__selectText {
+            h1{
+                font-family: "Helvetica";
+                font-size: 26px;
+                color: #565555;
+                font-weight: 700;
+            }
+        }
+    }
+    .blocks {
+        display: flex;
+        .blocks__rows {
+            display: flex;            
+            .blocks__item {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                width: 217px;
+                height: 279px;
+                border: 1px solid rgba(0, 0, 0, 0.16);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(253, 254, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 100%);
+                .blocks__image {
+                    display: flex;
+                    flex-flow: column;                    
+                    width: 203px;
+                    height: 197px;
+                    position: relative;                    
+                    background-image: url(../img/Main/1.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    .blocks__imageText {
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        color: #fff;
+                    }
+                }
+                .blocks__underImage {
+                    display: flex;
+                    flex-flow: column;
+                    width: 190px;
+                    height: 75px;
+                    .blocks__text {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #DEDEDE;
+                        height: 37px;
+                        width: 100%;
+                        font-family: "Helvetica";
+                        font-size: 15px;
+                        color: #565555;
+                        font-weight: 400;
+
+                    }
+                    .blocks__share {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        height: 37px;
+                        width: 100%;                        
+                        .blocks__shareText {
+                            font-family: "Helvetica";
+                            font-size: 14px;
+                            color: #565555;
+                            font-weight: 400;
+                            margin-right: 5px;
+                        }
+                        img {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+
 }

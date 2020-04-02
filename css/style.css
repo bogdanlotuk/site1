@@ -1,6 +1,9 @@
 @font-face {
   font-family: Lobster;
   src: url(../fonts/Lobster\ 1.4.otf); }
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaRegular.eot); }
 .container {
   max-width: 1280px;
   margin: 0 auto; }
@@ -12,7 +15,7 @@
     justify-content: center;
     background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%); }
     .container .header .header__logo {
-      width: 33.333%;
+      width: 40%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -26,9 +29,97 @@
         .container .header .header__logo .header__logoText span {
           color: #ff7700; }
     .container .header .header__navigation {
-      width: 66.666%;
+      width: 60%;
       height: 100%; }
       .container .header .header__navigation .header__navList {
-        display: flex; }
+        height: 100%;
+        display: flex;
+        justify-content: center; }
+        .container .header .header__navigation .header__navList a {
+          text-decoration: none;
+          font-family: "Helvetica CE";
+          font-size: 15px;
+          color: #545454; }
+          .container .header .header__navigation .header__navList a li {
+            width: 108px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #DEDEDE; }
+            .container .header .header__navigation .header__navList a li:hover {
+              background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%); }
+  .container .selectImage {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .container .selectImage .selectImage__selectText h1 {
+      font-family: "Helvetica";
+      font-size: 26px;
+      color: #565555;
+      font-weight: 700; }
+  .container .blocks {
+    display: flex; }
+    .container .blocks .blocks__rows {
+      display: flex; }
+      .container .blocks .blocks__rows .blocks__item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 217px;
+        height: 279px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(253, 254, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 100%); }
+        .container .blocks .blocks__rows .blocks__item .blocks__image {
+          display: flex;
+          flex-flow: column;
+          width: 203px;
+          height: 197px;
+          position: relative;
+          background-image: url(../img/Main/1.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+          .container .blocks .blocks__rows .blocks__item .blocks__image .blocks__imageText {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            color: #fff; }
+        .container .blocks .blocks__rows .blocks__item .blocks__underImage {
+          display: flex;
+          flex-flow: column;
+          width: 190px;
+          height: 75px; }
+          .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #DEDEDE;
+            height: 37px;
+            width: 100%;
+            font-family: "Helvetica";
+            font-size: 15px;
+            color: #565555;
+            font-weight: 400; }
+          .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 37px;
+            width: 100%; }
+            .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share .blocks__shareText {
+              font-family: "Helvetica";
+              font-size: 14px;
+              color: #565555;
+              font-weight: 400;
+              margin-right: 5px; }
+            .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share img {
+              margin-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */
