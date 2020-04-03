@@ -98,6 +98,7 @@
                 width: 100%;                
                 justify-content: center;  
                 align-items: center; 
+                position: relative;
                            
                 .search {
                     width: 445px;
@@ -107,6 +108,31 @@
                     margin-right: 20px;
                     
                 }
+
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                    padding: 7px 26px;
+                    background-color: #969292;
+                    opacity: 0.59;
+                    color: #fff;
+                    font-family: "Helvetica";
+                    font-size: 18px;
+                    border-radius: 5px;
+                    position: absolute;
+                    left: 325px;
+                }
+
+                .hide {
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: -1;
+                    width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+
+                }
+
                 .submit {
                     width: 205px;
                     height: 45px;
