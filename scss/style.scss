@@ -22,6 +22,7 @@
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%);
+        // opacity: -1;
         .header__logo {
             width: 40%;
             height: 100%;
@@ -29,13 +30,14 @@
             align-items: center;
             justify-content: center; 
             a {
-                text-decoration: none;           
+                text-decoration: none;                         
                 .header__logoText {
                     display: flex;
                     font-family: "Lobster";
                     font-size: 49px;
                     font-weight: 400;
-                    color: #676666;
+                    line-height: 0.2;
+                    color: #676666;                    
                     span {
                         color: #ff7700;
                     }
@@ -51,17 +53,24 @@
                 justify-content: center;
                 a {
                     text-decoration: none;
-                    font-family: "Helvetica CE";
+                    font-family: "Helvetica";
                     font-size: 15px;
                     color: #545454;
+                    text-shadow: 1px 1px 0 #ffffff;
+                    border-right: 1px solid #DEDEDE;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+
                     li {
                         width: 108px;
                         height: 100%;
                         display: flex;
                         flex-flow: column;
                         align-items: center;
-                        justify-content: center;
-                        border-right: 1px solid #DEDEDE;
+                        justify-content: center;                     
+
                         &:hover {
                             background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%);
                         }  
@@ -79,7 +88,8 @@
         display: flex;
         flex-flow: column;
         justify-content: flex-start;
-        align-items: center;        
+        align-items: center;    
+        margin-top: 3%;    
         .selectImage__selectText {
             h1{
                 font-family: "Helvetica";
@@ -121,6 +131,9 @@
                     border-radius: 5px;
                     position: absolute;
                     left: 325px;
+                    &:hover{
+                        background-color: #ff7700;
+                    }
                 }
 
                 .hide {
@@ -144,7 +157,7 @@
                     border-radius: 5px;
                     border: none;
                     line-height: 1;
-                    
+                    cursor: pointer;                    
                 }
             }
         }
@@ -221,10 +234,16 @@
                             color: #979393;
                             font-weight: 400;
                             margin-right: 5px;
+                            
                         }
-                        img {
+                        .fab {
+                            font-size: 23px;
+                            color: #b1aeae;
                             margin-left: 5px;
-                        }
+                            &:hover {
+                                color: #283e8f;;
+                            }
+                        }                        
                     }
                 }
             }

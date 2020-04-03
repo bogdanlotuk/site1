@@ -30,6 +30,7 @@
           font-family: "Lobster";
           font-size: 49px;
           font-weight: 400;
+          line-height: 0.2;
           color: #676666; }
           .container .header .header__logo a .header__logoText span {
             color: #ff7700; }
@@ -42,17 +43,20 @@
         justify-content: center; }
         .container .header .header__navigation .header__navList a {
           text-decoration: none;
-          font-family: "Helvetica CE";
+          font-family: "Helvetica";
           font-size: 15px;
-          color: #545454; }
+          color: #545454;
+          text-shadow: 1px 1px 0 #ffffff;
+          border-right: 1px solid #DEDEDE; }
+          .container .header .header__navigation .header__navList a:last-child {
+            border-right: none; }
           .container .header .header__navigation .header__navList a li {
             width: 108px;
             height: 100%;
             display: flex;
             flex-flow: column;
             align-items: center;
-            justify-content: center;
-            border-right: 1px solid #DEDEDE; }
+            justify-content: center; }
             .container .header .header__navigation .header__navList a li:hover {
               background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%); }
             .container .header .header__navigation .header__navList a li img {
@@ -63,7 +67,8 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    margin-top: 3%; }
     .container .selectImage .selectImage__selectText h1 {
       font-family: "Helvetica";
       font-size: 26px;
@@ -98,6 +103,8 @@
           border-radius: 5px;
           position: absolute;
           left: 325px; }
+          .container .selectImage .selectSearchString .selectSearchString__searchSubmit label:hover {
+            background-color: #ff7700; }
         .container .selectImage .selectSearchString .selectSearchString__searchSubmit .hide {
           position: absolute;
           overflow: hidden;
@@ -115,7 +122,8 @@
           font-weight: 600;
           border-radius: 5px;
           border: none;
-          line-height: 1; }
+          line-height: 1;
+          cursor: pointer; }
   .container .blocks {
     display: flex;
     flex-flow: column;
@@ -180,8 +188,12 @@
               color: #979393;
               font-weight: 400;
               margin-right: 5px; }
-            .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share img {
+            .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share .fab {
+              font-size: 23px;
+              color: #b1aeae;
               margin-left: 5px; }
+              .container .blocks .blocks__rows .blocks__item .blocks__underImage .blocks__share .fab:hover {
+                color: #283e8f; }
   .container footer {
     height: 120px;
     width: 90%;
