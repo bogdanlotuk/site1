@@ -12,7 +12,7 @@
   margin: 0 auto; }
   .container .header {
     width: 100%;
-    height: 113px;
+    min-height: 113px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
           font-size: 15px;
           color: #545454;
           text-shadow: 1px 1px 0 #ffffff;
-          border-right: 1px solid #DEDEDE; }
+          border-right: 1px solid #c9c8c8; }
           .container .header .header__navigation .header__navList a:last-child {
             border-right: none; }
           .container .header .header__navigation .header__navList a li {
@@ -196,7 +196,7 @@
                 color: #283e8f; }
   .container footer {
     height: 120px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
@@ -206,6 +206,63 @@
       font-size: 17px;
       font-weight: 400;
       color: #8b8a8a;
-      margin-right: 1%; }
+      padding-right: 100px; }
+
+@media (max-width: 992px) {
+  .blocks__rows {
+    flex-wrap: wrap;
+    margin-top: 0px !important; }
+    .blocks__rows .blocks__item {
+      min-width: 45%;
+      margin-top: 20px; } }
+@media (max-width: 768px) {
+  .header {
+    flex-flow: column; }
+
+  .header__logoText {
+    font-size: 36px !important; }
+
+  .selectSearchString__searchSubmit {
+    display: flex;
+    flex-flow: column; }
+    .selectSearchString__searchSubmit label {
+      top: 5px; }
+    .selectSearchString__searchSubmit .submit {
+      margin-top: 10px; } }
+@media (max-width: 650px) {
+  .container {
+    min-width: 400px;
+    margin: 0 auto !important; }
+
+  .header__logoText {
+    font-size: 28px !important;
+    width: 300px !important;
+    justify-content: center !important; }
+
+  .header__navList li {
+    width: 98px !important; }
+
+  .selectImage {
+    margin-bottom: 0px !important; }
+    .selectImage h1 {
+      font-size: 16px !important; }
+    .selectImage .selectSearchString {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .selectImage .selectSearchString .search {
+        width: 345px !important;
+        margin-right: 0px !important; }
+      .selectImage .selectSearchString label {
+        left: 225px !important; }
+
+  .blocks__rows {
+    flex-flow: column; }
+
+  footer {
+    justify-content: center !important; }
+
+  .footerText {
+    font-size: 14px !important;
+    text-align: center !important; } }
 
 /*# sourceMappingURL=style.css.map */
